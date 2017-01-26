@@ -271,7 +271,7 @@ function init() {
         zoom: 17,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(30.609788, 32.268555),
+        center: new google.maps.LatLng(23.54,87.29),
 
         scrollwheel: false,
 
@@ -399,14 +399,14 @@ function init() {
 
     // Let"s also add a marker while we"re at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(30.609788, 32.268555),
+        position: new google.maps.LatLng(23.54,87.29),
         /* animation:google.maps.Animation.BOUNCE, Make the marker bounce */
         map: map,
-        title: "Marqa Studio"
+        title: "Hey ! I stay here"
     });
 
     var infowindow = new google.maps.InfoWindow({
-        content: "Marqa Studio"
+        content: "	Hey ! I stay here"
     });
 
     google.maps.event.addListener(marker, "click", function() {
