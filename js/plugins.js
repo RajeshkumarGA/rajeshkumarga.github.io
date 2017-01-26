@@ -271,7 +271,7 @@ function init() {
         zoom: 17,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(23.54,87.29),
+        center: new google.maps.LatLng(23.5501712,87.2897338),
 
         scrollwheel: false,
 
@@ -399,7 +399,7 @@ function init() {
 
     // Let"s also add a marker while we"re at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(23.54,87.29),
+        position: new google.maps.LatLng(23.5501712,87.2897338),
         /* animation:google.maps.Animation.BOUNCE, Make the marker bounce */
         map: map,
         title: "Hey ! I stay here"
