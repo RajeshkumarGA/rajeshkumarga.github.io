@@ -199,10 +199,10 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
 	width: 100%;
     top: 30%;
     background: none;
-  -webkit-animation: zoomout 30s ease-in infinite;
-  animation: zoomout 30s ease-in infinite;
-  transition: all .9s ease-in-out;
-  overflow: hidden;
+    -webkit-animation: zoomout 30s ease-in infinite;
+    animation: zoomout 30s ease-in infinite;
+    transition: all .9s ease-in-out;
+    overflow: hidden;
     letter-spacing: 1.4px;
 	text-transform: uppercase;
     -webkit-transform: translate3d(-50%,-50%,0);
@@ -245,9 +245,9 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
 	bottom:  50px;
 	left:  50%;
 	background: none;
-   -webkit-animation: zoomout 10s ease-in infinite;
-   animation: zoomout 10s ease-in infinite;
-   transition: all .5s ease-in-out;
+   -webkit-animation: zoomout 30s ease-in infinite;
+    animation: zoomout 30s ease-in infinite;
+    transition: all .9s ease-in-out;
     overflow: hidden;
 	cursor: pointer;
 	-webkit-transform: translateX(-50%);
@@ -265,6 +265,14 @@ button, button:focus, a, a:hover, a:focus, input, input:active, input:focus, tex
 	border-radius: 5px;
 	left: 9px;
 	top: 8px;
+}
+.header .mouse-pos{
+   		margin-top:10%;
+   }
+@media only screen and (max-width: 500px) {
+   .header .mouse-pos{
+   		margin-top:30%;
+   }
 }
 @-webkit-keyframes mouseMove {
 	0% { bottom: 50px; }
