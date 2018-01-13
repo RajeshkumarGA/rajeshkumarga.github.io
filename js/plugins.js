@@ -183,16 +183,28 @@ $(document).ready(function() {
         });
         // start numbers animate at skills section //
         $("#chart_num_1").animateNumber({
-            number: 88
+            number: 80
         }, 1500);
         $("#chart_num_2").animateNumber({
-            number: 95
+            number: 85
         }, 1500);
         $("#chart_num_3").animateNumber({
-            number: 73
+            number: 70
         }, 1500);
         $("#chart_num_4").animateNumber({
+            number: 15
+        }, 1500);
+        $("#chart_num_5").animateNumber({
+            number: 75
+        }, 1500);
+        $("#chart_num_6").animateNumber({
             number: 55
+        }, 1500);
+        $("#chart_num_7").animateNumber({
+            number: 70
+        }, 1500);
+        $("#chart_num_8").animateNumber({
+            number: 10
         }, 1500);
     }, {
         accX: 0,

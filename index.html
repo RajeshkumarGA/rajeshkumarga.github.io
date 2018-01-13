@@ -31,6 +31,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!-- Custom styles css file -->
 		<link rel="stylesheet" href="css/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 		<!--[if lt IE 9]>
 		    <script src="js/html5shiv.js"></script>
@@ -143,7 +144,7 @@
 								<div class="acc-content">1)Qualified all india GATE Exam.<br>
 								2)Programming Contests: Actively participate in online programming contests(HackerRank) and have    	Secured 7000* rank and 4 star coder in algorithms .<br>
 								3)Secured 3rd place at regional level Collage Competition .<br>
-								4)Participated in International Level Science Talent Exam & Secured 1st in school level.</div>
+								4)Participated in International Level Science Talent Exam  Secured 1st in school level.</div>
 							</div>
 							<div class="acc-item">
 								<div class="acc-title"><i class="ion-android-navigate"></i> Positions of Responsibility </div>
@@ -177,13 +178,62 @@
 		<!-- Start Fun Facts Section -->
 		<div class="fun-facts center" id="facts">
 			<div class="pattern"></div>
-			<div class="container">
-				<div class="row">
-					<div>
-						
+			<div class="container" style="color:#ffffff">
+				<div class="title">
+					<h2 class="h2" style="color:#ffffff">Work Experience Dashboard</h2>
+					<div class="heading-line"></div>
+					<p class="title" style="color:#ffffff">Work Experience was great - it made me realise what I want to do as a career.</p>
+				</div>	
+				<div class="row" style="margin-top:5%;">
+					<div class="col-xs-3 col-md-3 col-ls-3">
+						<p class="title" style="color:#ffffff;margin-left:-60%;">Projects Names</p>
+						<table style="margin-left:-30%;">
+							<th>
+								<tr>
+									<td><svg height="35" width="35">
+									  <circle cx="15" cy="15" r="12" stroke="white" stroke-width="1" fill="#3e95cd" />  
+									  </svg></td>
+    								<td>Facial expression recognition</td> 
+								</tr>
+								<tr>
+									<td><svg height="35" width="35">
+									  <circle cx="15" cy="15" r="12" stroke="white" stroke-width="1" fill="#8e5ea2" />  
+									  </svg></td>
+    								<td>personal Website</td> 
+								</tr>
+								<tr>
+									<td><svg height="35" width="35">
+									  <circle cx="15" cy="15" r="12" stroke="white" stroke-width="1" fill="#3cba9f" />  
+									  </svg></td>
+    								<td>Kruzr Website</td> 
+								</tr>
+								<tr>
+									<td><svg height="35" width="35">
+									  <circle cx="15" cy="15" r="12" stroke="white" stroke-width="1" fill="#e8c3b9" />  
+									  </svg></td>
+    								<td>Kruzr Dashboard</td> 
+								</tr>
+								<tr>
+									<td><svg height="35" width="35">
+									  <circle cx="15" cy="15" r="12" stroke="white" stroke-width="1" fill="#c45850" />  
+									  </svg></td>
+    								<td>E-commerce Supplier portal</td> 
+								</tr>
+							</th>
+
+						</table>
+					</div>
+					<div class="col-xs-3 col-md-3 col-ls-3">
+						<p class="title" style="color:#ffffff">Number of Days per Project.</p>
+						<canvas id="pie-chart" width="800" height="600"></canvas>
+					</div>
+					<div class="col-xs-6 col-md-6 col-ls-6">
+						<p class="title" style="color:#ffffff">Lines of Code per Project.</p>
+						<canvas id="bar-chart-grouped" width="900" height="350"></canvas>
 					</div>
 				
 				</div>
+			
 			</div>
 		</div>
 		<!-- End Fun Facts Section -->
@@ -249,33 +299,65 @@
 				<div class="skills-wrapper row">
 					<!-- main skill No. 1 -->
 					<div class="skill col-md-3 col-sm-6">
-						<div class="chart center" data-percent="70">
+						<div class="chart center" data-percent="80">
 							<span><span id="chart_num_1">0</span> %</span>
 						</div>
-						<h2>C Programing</h2>
+						<h4 style="color:#ffffff">C Programing</h4>
 					</div>
 					<!-- main skill No. 2 -->					
 					<div class="skill col-md-3 col-sm-6">
-						<div class="chart center" data-percent="78">
+						<div class="chart center" data-percent="85">
 							<span><span id="chart_num_2">0</span> %</span>
 						</div>
-						<h2>Java</h2>
+						<h4 style="color:#ffffff">Java</h4>
 					</div>
 					<!-- main skill No. 3 -->
 					<div class="skill col-md-3 col-sm-6">
-						<div class="chart center" data-percent="72">
+						<div class="chart center" data-percent="70">
 							<span><span id="chart_num_3">0</span> %</span>
 						</div>
-						<h2>Python</h2>
+						<h4 style="color:#ffffff">Python</h4>
 					</div>
 					<!-- main skill No. 4 -->
 					<div class="skill col-md-3 col-sm-6">
-						<div class="chart center" data-percent="55">
+						<div class="chart center" data-percent="15">
 							<span><span id="chart_num_4">0</span> %</span>
 						</div>
-						<h2>Html & Css</h2>
+						<h4 style="color:#ffffff">Android</h4>
 					</div>
-				</div> <!-- End main skills -->
+				</div>
+				<div class="skills-wrapper row">
+					<!-- main skill No. 5 -->
+					<div class="skill col-md-3 col-sm-6">
+						<div class="chart center" data-percent="75">
+							<span><span id="chart_num_5">0</span> %</span>
+						</div>
+						<h4 style="color:#ffffff">Angular JS</h2>
+					</div>
+					<!-- main skill No. 6 -->					
+					<div class="skill col-md-3 col-sm-6">
+						<div class="chart center" data-percent="55">
+							<span><span id="chart_num_6">0</span> %</span>
+						</div>
+						<h4 style="color:#ffffff">Javascript,Jquery & ajax</h2>
+					</div>
+					<!-- main skill No. 7 -->
+					<div class="skill col-md-3 col-sm-6">
+						<div class="chart center" data-percent="70">
+							<span><span id="chart_num_7">0</span> %</span>
+						</div>
+						<h4 style="color:#ffffff">Bootstrap,Html & Css</h2>
+					</div>
+					<!-- main skill No. 8 -->
+					<div class="skill col-md-3 col-sm-6">
+						<div class="chart center" data-percent="10">
+							<span><span id="chart_num_8">0</span> %</span>
+						</div>
+						<h4 style="color:#ffffff">Wordpress</h2>
+					</div>
+				</div>
+
+				 <!-- End main skills -->
 				<div class="other-skills">
 					<h2 class="h2">other skills</h2>
 					<div class="heading-line"></div>
@@ -462,7 +544,7 @@
 					    		</a>
 					    		<!-- popUp content -->
 					    		<div id="test-popup-3" class="white-popup mfp-hide">
-					    			<h3>MY RESUME</h3>
+					    			<h3> RESUME</h3>
 					    			<div class="heading-line"></div>
 					    			<p class="cat"></p>
 					    			<!--
@@ -832,6 +914,51 @@
 		<script src="js/wow.min.js"></script>
 		<script>
 			new WOW().init();
+		</script>
+		<script>
+			new Chart(document.getElementById("pie-chart"), {
+			    type: 'pie',
+			    data: {
+			      labels: ["Facial expression recognition", "personal Website", "Kruzr Website", "Kruzr Dashboard", "E-commerce Supplier portal"],
+			      datasets: [{
+			        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+			        data: [360,20,15,45,90]
+			      }]
+			    },
+			    options: {	
+			      legend: {
+			        display:false,
+			       
+			      }
+			    }
+			});
+
+			new Chart(document.getElementById("bar-chart-grouped"), {
+			    type: 'bar',
+			    data: {
+			      labels: ["PRJ-1", "PRJ-2", "PRJ-3", "PRJ-4", "PRJ-5"],
+			      datasets: [
+			        {
+			          backgroundColor: ["#3e95cd","#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+			          data: [10000,4000,5000,7000,15000],
+			        }
+			      ]
+			    },
+			    options: {
+			      legend: {
+			        display:false
+			      },
+			       scales: {
+				        yAxes: [{
+				            display: true,
+				            ticks: {
+				                suggestedMin: 0,    // minimum will be 0, unless there is 
+				                beginAtZero: true   // minimum value will be 0.
+				            }
+				        }]
+				    }
+			    }
+			});
 		</script>
 	</body>
 </noscript>
